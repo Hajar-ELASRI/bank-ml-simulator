@@ -1,0 +1,62 @@
+{
+  "svm": {
+    "accuracy": 0.8143646408839779,
+    "precision": 0.3584070796460177,
+    "recall": 0.7788461538461539,
+    "f1_score": 0.4909090909090909,
+    "confusion_matrix": [
+      [
+        656,
+        145
+      ],
+      [
+        23,
+        81
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "no",
+      "yes"
+    ]
+  },
+  "random_forest": {
+    "accuracy": 0.8773480662983425,
+    "precision": 0.46956521739130436,
+    "recall": 0.5192307692307693,
+    "f1_score": 0.4931506849315068,
+    "confusion_matrix": [
+      [
+        740,
+        61
+      ],
+      [
+        50,
+        54
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "no",
+      "yes"
+    ]
+  },
+  "mlp": {
+    "accuracy": 0.887292817679558,
+    "precision": 0.5185185185185185,
+    "recall": 0.2692307692307692,
+    "f1_score": 0.35443037974683544,
+    "confusion_matrix": [
+      [
+        775,
+        26
+      ],
+      [
+        76,
+        28
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "no",
+      "yes"
+    ]
+  }
+}

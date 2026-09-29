@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Simulateur de souscription bancaire par machine learning" />
+    <title>Bank ML — Simulateur</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="hero">
+        <div class="brand-mark" aria-hidden="true">B</div>
+        <div>
+          <p class="eyebrow">Machine Learning · Bank Marketing</p>
+          <h1>Simulateur de souscription</h1>
+          <p class="subtitle">
+            Renseignez le profil du client, sélectionnez un modèle et estimez sa réponse à la campagne.
+          </p>
+        </div>
+      </header>
+
+      <section class="panel" aria-labelledby="form-title">
+        <div class="panel-heading">
+          <div>
+            <p class="step">01 — Données client</p>
+            <h2 id="form-title">Caractéristiques d’entrée</h2>
+          </div>
+          <span id="dataset-info" class="dataset-info">Chargement du dataset…</span>
+        </div>
+
+        <form id="prediction-form">
+          <div id="fields" class="form-grid" aria-live="polite"></div>
+
+          <div class="model-zone">
+            <div class="field algorithm-field">
+              <label for="algorithm">Algorithme</label>
+              <select id="algorithm" name="algorithm" required>
+                <option value="svm">SVM</option>
+                <option value="random_forest" selected>Random Forest</option>
+                <option value="mlp">MLP — Perceptron multicouche</option>
+              </select>
+            </div>
+            <button id="submit-button" type="submit">
+              <span>SIMULER</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </form>
+
+        <p id="error-message" class="error-message" role="alert" hidden></p>
+      </section>
+
+      <section id="result-card" class="result-card" aria-live="polite" hidden>
+        <div>
+          <p class="step">02 — Résultat du modèle</p>
+          <p class="result-label">PRÉDICTION</p>
+          <p id="prediction" class="prediction">—</p>
+        </div>
+        <dl class="result-details">
+          <div>
+            <dt>Algorithme</dt>
+            <dd id="result-algorithm">—</dd>
+          </div>
+          <div>
+            <dt>Accuracy test</dt>
+            <dd id="result-accuracy">—</dd>
+          </div>
+        </dl>
+      </section>
+    </main>
+    <script src="/static/script.js" defer></script>
+  </body>
+</html>

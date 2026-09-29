@@ -1,0 +1,133 @@
+{
+  "target": "y",
+  "feature_order": [
+    "age",
+    "job",
+    "marital",
+    "education",
+    "default",
+    "balance",
+    "housing",
+    "loan",
+    "contact",
+    "day",
+    "month",
+    "duration",
+    "campaign",
+    "pdays",
+    "previous",
+    "poutcome"
+  ],
+  "numeric_features": {
+    "age": {
+      "min": 19.0,
+      "max": 87.0,
+      "default": 39.0,
+      "integer": true
+    },
+    "balance": {
+      "min": -3313.0,
+      "max": 71188.0,
+      "default": 444.0,
+      "integer": true
+    },
+    "day": {
+      "min": 1.0,
+      "max": 31.0,
+      "default": 16.0,
+      "integer": true
+    },
+    "duration": {
+      "min": 4.0,
+      "max": 3025.0,
+      "default": 185.0,
+      "integer": true
+    },
+    "campaign": {
+      "min": 1.0,
+      "max": 50.0,
+      "default": 2.0,
+      "integer": true
+    },
+    "pdays": {
+      "min": -1.0,
+      "max": 871.0,
+      "default": -1.0,
+      "integer": true
+    },
+    "previous": {
+      "min": 0.0,
+      "max": 25.0,
+      "default": 0.0,
+      "integer": true
+    }
+  },
+  "categorical_features": {
+    "job": [
+      "admin.",
+      "blue-collar",
+      "entrepreneur",
+      "housemaid",
+      "management",
+      "retired",
+      "self-employed",
+      "services",
+      "student",
+      "technician",
+      "unemployed",
+      "unknown"
+    ],
+    "marital": [
+      "divorced",
+      "married",
+      "single"
+    ],
+    "education": [
+      "primary",
+      "secondary",
+      "tertiary",
+      "unknown"
+    ],
+    "default": [
+      "no",
+      "yes"
+    ],
+    "housing": [
+      "no",
+      "yes"
+    ],
+    "loan": [
+      "no",
+      "yes"
+    ],
+    "contact": [
+      "cellular",
+      "telephone",
+      "unknown"
+    ],
+    "month": [
+      "apr",
+      "aug",
+      "dec",
+      "feb",
+      "jan",
+      "jul",
+      "jun",
+      "mar",
+      "may",
+      "nov",
+      "oct",
+      "sep"
+    ],
+    "poutcome": [
+      "failure",
+      "other",
+      "success",
+      "unknown"
+    ]
+  },
+  "dataset_rows": 4521,
+  "train_rows": 3616,
+  "test_rows": 905,
+  "random_state": 42
+}
